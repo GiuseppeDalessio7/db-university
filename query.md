@@ -24,11 +24,14 @@ ex 17/10/2023
 
     ---
 
-1.  SELECT id, name FROM `departments`; // Ho messo anche i nomi dei dipartimenti
+1.  SELECT COUNT(*) AS `departments_count` 
+    FROM `departments`
 
     ---
 
-1.  SELECT `phone` FROM `teachers` WHERE `phone` IS NULL;
+1.  SELECT COUNT(*) AS `teachers_count`
+    FROM `teachers` 
+    WHERE `phone` IS NOT null;
 
     ---
 
